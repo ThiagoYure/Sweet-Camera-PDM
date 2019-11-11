@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_tituloalbumsweetcamera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:="@id/imageView"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/imageView">
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            >
+
+        </GridView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_iconecameraabasweetcamera"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/inativoButton"
+            android:clickable="true"
+            android:onClick="proximaTela"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_iconealbumativosweetcamera"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/button"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>
